@@ -1,0 +1,88 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f5a9b8;
+    font-family: 'Sniglet Regular', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 28px;
+}
+
+button {
+    font-family: 'Sniglet Regular', sans-serif;
+    font-size: 24px;
+    background-color: #5bcefa;
+    padding: 12px;
+    border-radius: 16px;
+    margin: 0;
+    border: 0;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.1s;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#debug {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    font-size: 14px;
+}
+
+#start {
+    margin-top: 32px;
+}
+
+#blur {
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+    transition: opacity 0.6s;
+}
+
+.popup {
+    z-index: 200;
+    position: absolute;
+    background-color: #f5a9b8;
+    border-radius: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    width: fit-content;
+}
+
+.popup > h2 {
+    font-size: 32px;
+}
+
+main > div {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+#how-to-play, #about {
+    font-size: 85%;
+}
+
+#c {
+    display: none;
+}
