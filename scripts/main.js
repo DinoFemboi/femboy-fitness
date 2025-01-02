@@ -86,7 +86,7 @@ function loadSprite(name, src) {
     sprites[name] = new Image();
     sprites[name].src = src;
 }
-loadSprite('player', '/sprites/player.png');
+loadSprite('player', './sprites/player.png');
 
 var fonts = {};
 function loadFont(name, src) {
@@ -95,8 +95,8 @@ function loadFont(name, src) {
         document.fonts.add(loadedFace);
     });
 }
-loadFont('Sniglet Regular', '/fonts/Sniglet-Regular.ttf');
-loadFont('Sniglet Extra Bold', '/fonts/Sniglet-ExtraBold.ttf');
+loadFont('Sniglet Regular', './fonts/Sniglet-Regular.ttf');
+loadFont('Sniglet Extra Bold', './fonts/Sniglet-ExtraBold.ttf');
 
 function drawSprite(name, x, y, scale = 1) {
     ctx.drawImage(sprites[name], x - sprites[name].width * scale / 2, y - sprites[name].height * scale / 2, sprites[name].width * scale, sprites[name].height * scale);
